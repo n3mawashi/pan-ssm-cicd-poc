@@ -19,11 +19,11 @@ Testing CI/CD principals with firewall changes and maybe some AI.
 
 ### Bug
 1. Create a simple or complex issue
-  1. Use custom template still but with source/destination/port.
-  2. Use customer template for complex bugs to capture more details around applications (think AD)
+    1. Use custom template still but with source/destination/port.
+    2. Use customer template for complex bugs to capture more details around applications (think AD)
 2. Issue triggers a AWS/firewall reachability tests
-  1. AWS could be triggered from github <-> SNS queue
-  2. Firewall is likely to need a ansible playbook 
+    1. AWS could be triggered from github <-> SNS queue
+    2. Firewall is likely to need a ansible playbook 
 3. Reports back both tests into the issue
 4. Add a label if tests comeback green for engineer to asses next steps.
 
@@ -31,10 +31,10 @@ Testing CI/CD principals with firewall changes and maybe some AI.
 1. Create feature request with 5 tuple/URL requirement in description
 2. create branch for change
 3. add ansible/terraform code
-  1. Could use NLP/AI to recomemend code with some awareness of objects and groups (think AD)
+    1. Could use NLP/AI to recomemend code with some awareness of objects and groups (think AD)
 4. Create a PR
-  1. lint/syntax check
-  2. security scan code
+    1. lint/syntax check
+    2. security scan code
 5. merge change if approved
 6. trigger control node to get new configuration to roll out to firewall.
 7. Run reachability test to confirm change is sucessful.

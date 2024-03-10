@@ -1,5 +1,5 @@
-name: 🐞 Firewall Bug Report
-description: File a new bug report
+name: 🐞 Simple Firewall Bug Report
+description: File a new bug report where either a single port and URL requirement. Use normal template of complex bug report.
 title: 'bug: <title>'
 labels: [Bug, Needs Triage]
 body:
