@@ -1,0 +1,51 @@
+name: 🐞 Firewall Bug Report
+description: File a new bug report
+title: 'bug: <title>'
+labels: [Bug, Needs Triage]
+body:
+- type: textarea
+  attributes:
+    label: 'Brief Description'
+    description: 'Describe the problem you are experiencing.  Can include screenshots or brief logs to help with troubleshooting'
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    value: 'Please provide the following information to allow automated reachability testing to provide inital triage'
+- type: dropdown
+  attributes:
+    label: 'Operating Systems'
+    description: 'Which Operating Systems is starting the conversation? '
+    options:
+    - Linux
+    - Windows
+    default: 0
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: 'Source Address'
+    description: 'Which system is starting the conversation. This can be an IP address, fully qualified domain name or an instance ID'
+    placeholder: '1.2.3.4|myhost.mydomain.com|i-12345678'
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: 'Source Port'
+    description: "Which port is the conversation is starting on. If left blank we will assume it's a 'high-port' from the OS"
+    placeholder: 'Example: 80,443'
+- type: input
+  attributes:
+    label: 'Destination Address'
+    description: 'Which system are we trying to contact. This can be an IP address, fully qualified domain name or an instance ID'
+    placeholder: '5.6.7.8|www.internetdomain.com|i-12345678'
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: 'Destination Port'
+    description: 'Which port is the conversation starting on. If web then use port 443'
+    placeholder: '80,443,'
+    value: '443'
+  validations:
+    required: true

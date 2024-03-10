@@ -1,0 +1,19 @@
+name: 🐞 Complex Firewall Bug Report
+description: File a new complex bug report.
+title: 'bug: <title>'
+labels: [Bug, Needs Triage]
+body:
+- type: textarea
+  attributes:
+    label: 'Description'
+    description: 'Describe the problem you are experiencing and fill in the details below. Can include screenshots or brief logs to help with troubleshooting.'
+    value: |
+      - Source AWS account name:
+      - Source Operating systems or service (eg. Linux/Windows/Lambda)
+      - Source instance/IP address:
+      - Source Ports (optional):
+      - Destination IP Address/FQDN/Instance:
+      - Destination Ports:
+      - Application involved: eg. SQL server, Active-directory, 
+  validations:
+    required: true
