@@ -5,6 +5,8 @@ on:
   workflow_call:
   workflow_dispatch:
 
+permissions: read-all    
+
 jobs:
   security-check:
     name: Security Check
