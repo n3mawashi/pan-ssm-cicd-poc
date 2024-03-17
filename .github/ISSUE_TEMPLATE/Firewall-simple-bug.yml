@@ -11,7 +11,7 @@ body:
     required: true
 - type: markdown
   attributes:
-    value: 'Please provide the following information to allow automated reachability testing to provide inital triage'
+    value: 'Please provide the following information to allow automated reachability testing to provide initial triage'
 - type: dropdown
   attributes:
     label: 'Operating Systems'
@@ -26,6 +26,7 @@ body:
   attributes:
     label: 'Source Address'
     description: 'Which system is starting the conversation. This can be an IP address, fully qualified domain name or an instance ID'
+    # cspell:disable-next-line
     placeholder: '1.2.3.4|myhost.mydomain.com|i-12345678'
   validations:
     required: true
@@ -38,6 +39,7 @@ body:
   attributes:
     label: 'Destination Address'
     description: 'Which system are we trying to contact. This can be an IP address, fully qualified domain name or an instance ID'
+    # cspell:disable-next-line
     placeholder: '5.6.7.8|www.internetdomain.com|i-12345678'
   validations:
     required: true

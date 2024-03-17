@@ -2,16 +2,16 @@
 
 Testing CI/CD principals with firewall changes and maybe some AI.
 
-#### Hypothesis: CI/CD appliance firewall changes for the least cost with event driven architecture.
+**Hypothesis:** ***CI/CD appliance firewall changes for the least cost with event driven architecture.***
 
-## Ingedients:
+## Ingredients:
 * Terraform for infrastructure build
 * Ansible for config management (Most firewalls work with it and python)
 * Ec2 for ansible control node - hoping to move to a container or function
   * Could this be Ipv6 only.
-  * github's tf provider does have a data resource for aciton IP addresses in CIDR range.
+  * github's tf provider does have a data resource for action IP addresses in CIDR range.
 * SSM for:
-  * Applying intial playbook for control node.
+  * Applying initial playbook for control node.
   * Parameter store for secrets
 * KMS, S3, dynamodb, CloudWatch, Cloudtrail for tf backend and operations.
 
@@ -31,13 +31,13 @@ Testing CI/CD principals with firewall changes and maybe some AI.
 1. Create feature request with 5 tuple/URL requirement in description
 2. create branch for change
 3. add ansible/terraform code
-    1. Could use NLP/AI to recomemend code with some awareness of objects and groups (think AD)
+    1. Could use NLP/AI to recommend code with some awareness of objects and groups (think AD)
 4. Create a PR
     1. lint/syntax check
     2. security scan code
 5. merge change if approved
 6. trigger control node to get new configuration to roll out to firewall.
-7. Run reachability test to confirm change is sucessful.
+7. Run reachability test to confirm change is successful.
 
 ## Phase 2
 turn the control node into a lambda function or fargate container and start on merge commit event.
@@ -45,4 +45,4 @@ OR
 Use spot instances and ASG change the instance size from 0 to 1
 
 ## Phase 3
-Automatic ssh keys retieval from gpg
+Automatic ssh keys retrieval from gpg

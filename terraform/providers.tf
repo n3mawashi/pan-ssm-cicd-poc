@@ -8,13 +8,15 @@ terraform {
   }
 }
 
+# cspell:disable
+# complains about project name and other details.
 provider "aws" {
   region = "ap-southeast-2"
   default_tags {
     tags = {
       Environment = "POC"
       Project     = "PAN-CCM-CICD-POC"
-      Repositorty = "github.com/n3mawashi/pan-ssm-cicd-poc"
+      Repository = "github.com/n3mawashi/pan-ssm-cicd-poc"
       ManagedBy   = "Terraform/Ansible"
     }
   }
